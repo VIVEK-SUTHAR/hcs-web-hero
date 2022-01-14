@@ -32,6 +32,7 @@
 .navbar .menu-list {
   display: inline-flex;
 }
+
 .navbar .logo a {
   text-decoration: none;
   color: rgb(25, 255, 236);
@@ -42,7 +43,7 @@
   list-style: none;
 }
 .menu-list li a {
-  text-decoration: none;
+  text-decoration: underline;
   color: rgb(0, 0, 0);
   font-size: 18px;
   font-weight: 500;
@@ -50,15 +51,12 @@
   transition: all 0.5s ease-in-out;
   border: 0px solid #222;
   padding: 5px 10px;
- 
   border-radius: 20px;
   background: -webkit-linear-gradient(rgb(255, 134, 134), rgb(235, 58, 82));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .menu-list li a:hover {
-  
-  text-decoration:underline;
   background: -webkit-linear-gradient(rgb(255, 255, 255), rgba(229, 255, 0, 0.973));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

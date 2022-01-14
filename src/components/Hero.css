@@ -3,7 +3,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow: hidden;
+  
 }
+::selection {
+  color: rgb(247, 234, 123);
+  background: rgba(255, 255, 255, 0.2);
+}
+
 .hero {
   position: relative;
   /* background: linear-gradient(#ffb2b2, #e66465); */
@@ -58,28 +65,67 @@
   position: relative;
   display:block;
   background-color: rgb(143, 82, 255);
+  color: #fff;
   width: 12%;
   height: 6%;
   top: 80%;
-  left: 15%;
+  left: 18%;
   border-radius: 10px;
   transition: all 0.5s ease-in-out;
   text-align: center;
 }
 #social h6{
-  font-size:12px
+  font-size:18px
 }
 #social:hover {
-  width: 17%;
-  font-size: 23px;
-  box-shadow: 0px 0px 5px 10px rgba(143, 82, 200, 0.603);
+  /* width: 18%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 35px;
+  box-shadow: 0px 0px 15px 18px rgba(143, 82, 200, 0.603);
 }
 .hero img{
   display: relative;
   margin-left: 40%;
   margin-top: -5%;
 }
+#side-social{
+  position: relative;
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  background:rgba(255, 255, 255, 0.2);
+  left: 97.5%;
+  top: -40%;
+  font-size: 32px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding-left: 7px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+#side-social #insta{
+  font-size: 32px;
+  margin-top: 12px;
+}
+#side-social:hover{
+  color: #4a93ffe1;
+  width: 10%;
+  left: 95%;
+  font-size: 35px;
+  padding-left: 25px;
 
+}
+#side-social :hover{
+  color: #ff00d4e1;
+  width: 10%;
+  left: 95%;
+  font-size: 35px;
+}
 @media (max-width: 764px) {
   .hero {
     display: flex;
@@ -91,6 +137,14 @@
     font-size: 35px;
     top: 30%;
   }
+  #social{
+    margin-left: 30vw;
+    top: 55%;
+  }
+  #social #discord{
+    color: #ffffffe1;
+    font-size: 38px;
+  }
   #social h6{
    opacity: 0;
   }
@@ -100,7 +154,7 @@
     width: 150px;
     height: 150px;
   }
-}
-@media (max-width: 764px) {
-
+  #side-social{
+    display: none;
+  }
 }

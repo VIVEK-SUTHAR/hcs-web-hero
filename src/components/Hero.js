@@ -13,10 +13,14 @@ export default function Hero() {
         <br /> Create
       </h1>
       <span id="social">
-        <FaDiscord></FaDiscord>
+        <FaDiscord id="discord"></FaDiscord>
         <h6>Join Us</h6>
       </span>
      <img src={pic}></img>
+     <span id="side-social">
+     <FaDiscord id="discord"></FaDiscord>
+     <FaInstagramSquare id="inst"></FaInstagramSquare>
+     </span>
     </div>
   );
 }

@@ -78,20 +78,10 @@
   font-size:18px
 }
 #social:hover {
-<<<<<<< HEAD
-  /* width: 18%; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  font-size: 35px;
-  box-shadow: 0px 0px 15px 18px rgba(143, 82, 200, 0.603);
-=======
   width: 17%;
-  height: 8%
+  height: 8%;
   font-size: 23px;
   box-shadow: 0px 0px 5px 10px rgba(143, 82, 200, 0.603);
->>>>>>> 0fbfd784642ee2cead209ec469b9e1cd46eb40c3
 }
 .hero img{
   display: relative;
@@ -165,9 +155,3 @@
     display: none;
   }
 }
-<<<<<<< HEAD
-=======
-@media (max-width: 764px) {
-
-}
->>>>>>> 0fbfd784642ee2cead209ec469b9e1cd46eb40c3

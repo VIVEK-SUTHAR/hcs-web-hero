@@ -96,22 +96,23 @@
 }
 @media (max-width: 764px) {
   .icon {
-    color: rgb(255, 255, 255);
-
+    color: rgb(207, 105, 105);
     display: block;
   }
   .navbar .menu-list {
     position: fixed;
     top: 0;
-    left: -100%;
-    /* background-color: #222; */
+    left: 50%;
     height: 100vh;
-    width: 100%;
+    width: 50%;
     max-width: 400px;
     display: block;
     padding: 40px 0;
     text-align: center;
     transition: all 0.5s ease-in-out;
+    background-color: rgba(229, 255,255, 0.973);
+    display: none;
+
   }
   .navbar .menu-list.active {
     left: 0%;

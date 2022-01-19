@@ -4,7 +4,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-  /* font-family: "Ubuntu Mono", monospace; */
 }
 .content {
   max-width: 1250px;
@@ -15,9 +14,7 @@
   position: fixed;
   z-index: 5;
   width: 100%;
-  
   padding: 10px 0;
-  
   background-color: rgb(32, 32, 32);
 }
 .navbar.stickey {
@@ -53,14 +50,18 @@
   padding: 5px 10px;
   border-radius: 20px;
   background: -webkit-linear-gradient(rgb(255, 134, 134), rgb(235, 58, 82));
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .menu-list li a:hover {
-  background: -webkit-linear-gradient(rgb(255, 255, 255), rgba(229, 255, 0, 0.973));
+  background: -webkit-linear-gradient(
+    rgb(255, 255, 255),
+    rgba(229, 255, 0, 0.973)
+  );
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  
 }
 .logo {
   display: flex;
@@ -80,6 +81,7 @@
   font-size: 23px;
   font-weight: 400;
   background: -webkit-linear-gradient(rgb(255, 134, 134), rgb(235, 58, 82));
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -93,6 +95,9 @@
   position: absolute;
   right: 30px;
   top: 20px;
+}
+.mobilenav {
+  display: none;
 }
 @media (max-width: 764px) {
   .icon {
@@ -110,9 +115,8 @@
     padding: 40px 0;
     text-align: center;
     transition: all 0.5s ease-in-out;
-    background-color: rgba(229, 255,255, 0.973);
+    background-color: rgba(229, 255, 255, 0.973);
     display: none;
-
   }
   .navbar .menu-list.active {
     left: 0%;
@@ -126,5 +130,33 @@
   #About {
     top: 8%;
     background: rgb(167, 31, 31);
+  }
+  .mobilenav {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 50%;
+    background: rgb(32,32,32);
+    left: 24px;
+    border-radius: 10px;
+    list-style: none;
+    opacity: 0;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+  }
+  .mobilenav li a {
+    color: rgba(231, 177, 0, 0.897);
+    background: -webkit-linear-gradient(rgb(255, 134, 134), rgb(235, 58, 82));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+  }
+  .mobilenav li {
+    margin-top: 10%;
   }
 }

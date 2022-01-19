@@ -4,7 +4,6 @@
   padding: 0;
   box-sizing: border-box;
   overflow: hidden;
-  
 }
 ::selection {
   color: rgb(247, 234, 123);
@@ -13,8 +12,6 @@
 
 .hero {
   position: relative;
-  /* background: linear-gradient(#ffb2b2, #e66465); */
-  /* background: rgb(0, 0, 0); */
   background-color: rgb(32, 32, 32);
   top: 50%;
   width: 100vw;
@@ -24,7 +21,6 @@
 .hero h1 {
   position: absolute;
   top: 10%;
-  /* width: 100vw; */
   text-align: left;
   font-size: 85px;
   margin-left: 15%;
@@ -38,14 +34,12 @@
   top: 25vh;
   font-size: 40px;
   width: 50%;
-  /* height: 50vh; */
   color: azure;
 
   margin-left: 5%;
 }
 .text .hero-text {
   position: relative;
-  /* display: block; */
   top: 15%;
   font-size: 28px;
   width: 100vw;
@@ -61,38 +55,38 @@
   border-radius: 50%;
 }
 #social {
-  display: flex;
   position: relative;
-  display:block;
+  display: block;
   background-color: rgb(143, 82, 255);
   color: #fff;
   width: 12%;
   height: 6%;
   top: 80%;
-  left: 18%;
+  left: 17%;
   border-radius: 10px;
   transition: all 0.5s ease-in-out;
   text-align: center;
 }
-#social h6{
-  font-size:18px
+#social h6 {
+  font-size: 18px;
 }
 #social:hover {
   width: 17%;
+  left: 15%;
   font-size: 23px;
   box-shadow: 0px 0px 5px 10px rgba(143, 82, 200, 0.603);
 }
-.hero img{
+.hero img {
   display: relative;
   margin-left: 40%;
   margin-top: -5%;
 }
-#side-social{
+#side-social {
   position: relative;
   width: 10%;
   display: flex;
   flex-direction: column;
-  background:rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.2);
   left: 97.5%;
   top: -40%;
   font-size: 32px;
@@ -104,19 +98,18 @@
   padding-bottom: 5px;
   padding-top: 5px;
 }
-#side-social #insta{
+#side-social #insta {
   font-size: 32px;
   margin-top: 12px;
 }
-#side-social:hover{
+#side-social:hover {
   color: #4a93ffe1;
   width: 10%;
   left: 95%;
   font-size: 35px;
   padding-left: 25px;
-
 }
-#side-social :hover{
+#side-social :hover {
   color: #ff00d4e1;
   width: 10%;
   left: 95%;
@@ -133,24 +126,24 @@
     font-size: 35px;
     top: 30%;
   }
-  #social{
-    margin-left: 30vw;
+  #social {
+    margin-left: 5vw;
     top: 55%;
   }
-  #social #discord{
+  #social #discord {
     color: #ffffffe1;
     font-size: 38px;
   }
-  #social h6{
-   opacity: 0;
+  #social h6 {
+    opacity: 0;
   }
-  .hero img{
+  .hero img {
     margin-left: 50px;
     margin-top: -130px;
     width: 150px;
     height: 150px;
   }
-  #side-social{
+  #side-social {
     display: none;
   }
 }

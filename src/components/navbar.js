@@ -1,6 +1,14 @@
 import React from "react";
 import logo from "../logo-final.png";
 export default function navbar() {
+  const showNav = () => {
+    const menu = document.querySelector(".mobilenav");
+    menu.style.opacity = 1;
+  };
+  const hideNav=()=>{
+    const menu = document.querySelector(".mobilenav");
+    menu.style.opacity = 0;
+  }
   return (
     <nav className="navbar">
       <div className="content">
@@ -30,9 +38,27 @@ export default function navbar() {
             <a href="#">Team</a>
           </li>
         </ul>
-        <div className="icon menu-btn" >
+        <div className="icon menu-btn" onClick={showNav}>
           <i className="fas fa-bars"> </i>
         </div>
+      </div>
+      {/* Mobile NavigationBar */}
+      <div className="mobilenav">
+      <div className="icon cancel-btn" onClick={hideNav}>
+            <i className="fas fa-times"> </i>
+          </div>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#">Gallery</a>
+        </li>
+        <li>
+          <a href="#events">Events</a>
+        </li>
+        <li>
+          <a href="#">Team</a>
+        </li>
       </div>
     </nav>
   );

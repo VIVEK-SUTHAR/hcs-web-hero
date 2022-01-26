@@ -38,6 +38,8 @@
 }
 .menu-list li {
   list-style: none;
+  overflow: hidden;
+
 }
 .menu-list li a {
   text-decoration: underline;
@@ -45,7 +47,7 @@
   font-size: 18px;
   font-weight: 500;
   margin-left: 25px;
-  transition: all 0.5s ease-in-out;
+  transition: all 2s ease-in-out;
   border: 0px solid #222;
   padding: 5px 10px;
   border-radius: 20px;
@@ -62,6 +64,10 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  border: 1px double cyan;
+}
+.menu-list li a:active{
+background-color: aliceblue;
 }
 .logo {
   display: flex;
@@ -90,11 +96,16 @@
   font-size: 20px;
   cursor: pointer;
   display: none;
+  border:1px solid;
+  border-radius: 5px;
+  padding: 0.8%;
 }
 .icon.cancel-btn {
   position: absolute;
   right: 30px;
   top: 20px;
+  border:0px;
+
 }
 .mobilenav {
   display: none;
@@ -139,7 +150,7 @@
     align-items: center;
     width: 90%;
     height: 50%;
-    background: rgb(32,32,32);
+    background:transparent;
     left: 24px;
     border-radius: 10px;
     list-style: none;

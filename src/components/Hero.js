@@ -13,8 +13,8 @@ export default function Hero() {
         <br /> Create
       </h1>
       <span id="social">
-        <FaDiscord id="discord"></FaDiscord>
-        <h6>Join Us</h6>
+        <FaDiscord id="discord" ></FaDiscord>
+        <h6><a href="https://discord.gg/Xu4RVnhE" target='_blank'>Join Us</a></h6>
       </span>
      <img src={pic}></img>
      <span id="side-social">

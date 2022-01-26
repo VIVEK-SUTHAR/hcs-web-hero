@@ -1,13 +1,15 @@
 import React from "react";
 import logo from "../logo-final.png";
+import { Link } from "react-router-dom";
 export default function navbar() {
   const showNav = () => {
     const menu = document.querySelector(".mobilenav");
-    menu.style.opacity = 1;
+    menu.style.opacity=1;
+    menu.style.height ="50%";
   };
   const hideNav=()=>{
     const menu = document.querySelector(".mobilenav");
-    menu.style.opacity = 0;
+    menu.style.height = 0; 
   }
   return (
     <nav className="navbar">
@@ -26,10 +28,10 @@ export default function navbar() {
             <i className="fas fa-times"> </i>
           </div>
           <li>
-            <a href="#about">About</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="#">Gallery</a>
+            <Link to="/Gallery">Gallery</Link>
           </li>
           <li>
             <a href="#events">Events</a>
@@ -48,10 +50,10 @@ export default function navbar() {
             <i className="fas fa-times"> </i>
           </div>
         <li>
-          <a href="#about">About</a>
+        <Link to="/">Home</Link>
         </li>
         <li>
-          <a href="#">Gallery</a>
+          <Link to="/Gallery">Gallery</Link>
         </li>
         <li>
           <a href="#events">Events</a>

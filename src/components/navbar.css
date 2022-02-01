@@ -150,13 +150,12 @@ background-color: aliceblue;
     align-items: center;
     width: 90%;
     height: 50%;
-    background:transparent;
-    left: 24px;
+    background:#222;
     border-radius: 10px;
     list-style: none;
     opacity: 0;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 32px;
+    font-weight: 700;
     transition: all 0.2s ease-in-out;
   }
   .mobilenav li a {
